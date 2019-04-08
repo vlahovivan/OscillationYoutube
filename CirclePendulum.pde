@@ -17,11 +17,11 @@ public class CirclePendulum {
 	}
 
 	void update(int timer){
-		this.yPos = (height/2) + this.amplitude*sin(this.omega*timer+this.angleOffset);
+		yPos = (height/2) + amplitude*sin(omega*timer+angleOffset);
 	}
 
 	void display(){
 		fill(255,0,0);
-		ellipse(this.xPos, this.yPos, 10, 10);
+		ellipse(xPos, yPos, 10, 10);
 	}
 }
