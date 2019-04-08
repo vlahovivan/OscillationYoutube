@@ -8,7 +8,6 @@ void setup() {
 	size(1220,640);
 	frameRate(FPS);
 
-	translate(0, height/2);
 	ellipseMode(CENTER);
 
 	fill(255,0,0);
@@ -27,6 +26,7 @@ void setup() {
 
 
 	period = 2*PI*sqrt(0.2); // time it takes a circle to do a full oscillation (in seconds)
+				 // you need to put mass divided by proportionality constant in square root
 }
 
 void draw() {
@@ -39,7 +39,8 @@ void draw() {
 	}
 
 	/*
-	* REMOVE COMMENT IF YOU WANT TO SAVE ALL FRAMES
+	* REMOVE COMMENT IF YOU WANT TO SAVE THE FRAMES MADE IN ONE PERIOD
+	* THEY WILL BE SAVED IN A SEPARATE FOLDER NAMED movie
 	*/
 
 //	if((frameCount/60)<=period){
